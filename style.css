@@ -18,11 +18,14 @@
 body {
     font-family: Century Gothic, Verdana, sans-serif;
     overflow-x: hidden;
+     margin-top: 30px;
+    padding: 30px;
+    background-size: cover;
 }
 
 header {
     /* border: 1px solid black; */
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     position: fixed;
     left: 0;
@@ -293,33 +296,33 @@ span.dollar {
 .special-dishes {
     /* border: 1px solid black; */
     width: 90%;
-    margin: 20px auto;
+    margin: 50px auto;
 }
 
-body .special-dishes header {
+.special-dishes .heading {
+    /* border: 1px solid black; */
     width: 100%;
-    margin: 40px auto;
+    margin: 20px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header .heading {
-    /* border: 1px solid black; */
-    width: 200px;
-    font-weight: bold;
-    font-size: 1rem;
-    margin-left: 1rem;
-}
-
-.heading small {
+.heading-desc small {
     color: var(--guest-color);
     letter-spacing: 1.5px;
 }
 
-.heading h2 {
+.heading-desc {
+    margin-left: 1.5rem;
+}
+
+.heading-desc h2 {
+    width: 200px;
     color: var(--h-color);
-    margin: 18px 0 20px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 18px 0;
 }
 
 .arrows {
