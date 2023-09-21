@@ -5,11 +5,7 @@
 @media (max-width: 858px) {
     header {
         width: 100%;
-           border: 1px solid black;
-        background: var(--background);
-    width: 80%;
-    margin: 0 auto;
-         justify-content: space-between;
+        justify-content: space-between;
     }
 
     .checkbtn {
@@ -218,6 +214,7 @@
         display: none;
     }
 }
+
 /* =================
       hero-description
     ================= */
@@ -280,10 +277,8 @@
     }
 }
 
-@media(mox-width: 560px) {
+@media(mox-width: 576px) {
     .special-dishes {
-        /* width: 100%; */
-
         display: flex;
         justify-content: center;
         align-items: center;
@@ -292,9 +287,6 @@
     .special-dishes .heading {
         width: 100%;
         margin: 20px auto;
-        /* display: flex;
-    justify-content: center;
-    align-items: center; */
     }
 
     .arrows {
@@ -302,6 +294,3 @@
         display: flex;
     }
 }
-
-
-
