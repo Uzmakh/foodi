@@ -4,8 +4,7 @@
 
 @media (max-width: 858px) {
     header {
-        width: 80%;
-        justify-content: space-between;
+        width: 100%;
     }
 
     .checkbtn {
