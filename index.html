@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="   https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <title>Responsive Landing Page-Restuarant</title>
 </head>
 
@@ -15,6 +16,10 @@
     <header>
         <img src="images/logo.png" alt="brand-logo">
         <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
             <ul>
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#"">Menu</a>
@@ -42,14 +47,17 @@
         <!-- /icons -->
     </header>
     <main>
+        <!-- ==============
+                 Section-1
+               ============== -->
         <section class="hero">
             <div class="hero-description">
                 <h1>Dive into Delights of Delectable <span class="food">Food</span>
                 </h1>
                 <p>Where Each Plate Weaves a Story of Culinary Mastery and Passionate Craftsmanship</p>
-                   <div class="center">
+                <div class="center">
                     <button type="button">Order Now</button>
-                 
+
                     <p>Watch Video</p>
                     <span class="play-btn">
                         <i class="fa-solid fa-play"></i>
@@ -61,7 +69,6 @@
                 <div class='speech-bubble'>Hot spicy Food 🌶️</div>
 
                 <img src="images/hero-img.png" alt="A girl enjoying food">
-
 
                 <div class="overlapping">
                     <div class="left-overlap ">
@@ -90,62 +97,67 @@
             <!-- /hero-img -->
         </section>
         <!-- /hero -->
-
+        <!-- ==============
+                 Section-2
+              ============== -->
         <section class="special-dishes">
             <header>
                 <div class="heading">
-            <small>SPECIAL DISHES</small>
-            <h2>Standout Dishes From Our Menu </h2>
-            </div>
-            <div class="arrows">
-            <span class="less-than-sign">
-                ﹤
-            </span>
-               <span class="greater-than-sign">
-                ﹥
-            </span>
-            </div>
+                    <small>SPECIAL DISHES</small>
+                    <h2>Standout Dishes From Our Menu </h2>
+                </div>
+                <div class="arrows">
+                    <span class="less-than-sign">
+                        ﹤
+                    </span>
+                    <span class="greater-than-sign">
+                        ﹥
+                    </span>
+                </div>
             </header>
             <div class="dish-cards">
                 <div class="dish-card">
                     <div class="fav">
-                        <span class="heart">🤍</span></div>
-            <img src="images/Fattoush-salad.png" alt="">
-          <h4>Fattoush salad</h4>
-            <p>Description of the item</p>
-            <div class="rate">
-                <p> <span class="dollar">$ </span>24.00</p>
-                 <p>⭐ 4.9</p>
-                 </div>
-                 <!-- /rate -->
-              </div>
-                 <!-- /dish-card-1 -->
+                        <span class="heart">🤍</span>
+                    </div>
+                    <img src="images/Fattoush-salad.png" alt="">
+                    <h4>Fattoush salad</h4>
+                    <p>Description of the item</p>
+                    <div class="rate">
+                        <p> <span class="dollar">$ </span>24.00</p>
+                        <p>⭐ 4.9</p>
+                    </div>
+                    <!-- /rate -->
+                </div>
+                <!-- /dish-card-1 -->
                 <div class="dish-card">
-                     <div class="fav">
-                        <span class="heart">🤍</span></div>
-            <img src="images/Vegetable-salad.png" alt="">
-            <h4>Vegetable salad</h4>
-            <p>Description of the item</p>
-            <div class="rate">
-                <p> <span class="dollar">$ </span>26.00</p>
-                 <p>⭐4.6</p>
-                 </div>
-                </div>
-                 <!-- /dish-card-2 -->
-                 <div class="dish-card">
                     <div class="fav">
-                        <span class="heart">🤍</span></div>
-            <img src="images/Fattoush-salad.png" alt="">
-            <h4>Egg vege salad</h4>
-            <p>Description of the item</p>
-            <div class="rate">
-                <p> <span class="dollar">$ </span>23.00</p>
-                <p>⭐ 4.5</p>
+                        <span class="heart">🤍</span>
+                    </div>
+                    <img src="images/Vegetable-salad.png" alt="">
+                    <h4>Vegetable salad</h4>
+                    <p>Description of the item</p>
+                    <div class="rate">
+                        <p> <span class="dollar">$ </span>26.00</p>
+                        <p>⭐4.6</p>
+                    </div>
                 </div>
+                <!-- /dish-card-2 -->
+                <div class="dish-card">
+                    <div class="fav">
+                        <span class="heart">🤍</span>
+                    </div>
+                    <img src="images/Fattoush-salad.png" alt="">
+                    <h4>Egg vege salad</h4>
+                    <p>Description of the item</p>
+                    <div class="rate">
+                        <p> <span class="dollar">$ </span>23.00</p>
+                        <p>⭐ 4.5</p>
+                    </div>
                 </div>
                 <!-- /dish-card-3 -->
-                </div>
-                <!-- /dish-cards -->
+            </div>
+            <!-- /dish-cards -->
         </section>
     </main>
 </body>

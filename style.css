@@ -13,7 +13,6 @@
     --star-color: #FFE605;
     --guest-color: #FF6868;
     --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    --border-radius: 12px;
 }
 
 body {
@@ -21,10 +20,16 @@ body {
     overflow-x: hidden;
 }
 
-body header {
+header {
     /* border: 1px solid black; */
     width: 90%;
-    margin: 30px auto;
+    margin: 0 auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    height: 12vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -36,7 +41,6 @@ header img {
 
 header nav ul {
     display: flex;
-    /* flex-direction: row; */
 }
 
 header nav ul li {
@@ -94,6 +98,20 @@ button {
     border-radius: 20px;
 }
 
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 2.3rem;
+    color: #161a17;
+    float: right;
+    line-height: 4rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
 /* ==========
        main
     ========== */
@@ -106,7 +124,7 @@ main {
 }
 
 .hero {
-        /* border: 1px solid black; */
+    /* border: 1px solid black; */
     height: 100vh;
     display: flex;
     justify-content: space-around;
@@ -119,7 +137,6 @@ main {
     width: 100%;
     padding: 30px;
     line-height: 1.3;
-
 }
 
 span.food {
@@ -139,7 +156,6 @@ span.food {
 .hero-description p {
     /* border: 1px solid black; */
     width: 70%;
-    /* padding: 30px; */
     line-height: 1.5;
     color: var(--p-color);
     margin: 40px 0;
@@ -153,8 +169,6 @@ span.food {
 }
 
 span.play-btn {
-    /* width: 350px;
-    height: 350px; */
     padding: 15px;
     border-radius: 55%;
     background: #fff;
@@ -165,17 +179,6 @@ span.play-btn {
     display: inline;
     margin-right: 20px;
     font-weight: 500;
-}
-@media(max-width: 567px){
-.center{
-    display: flex;
-    flex-direction: column;
-}
-span.play-btn {
-    width: 30%;
-    display: block;
-    margin: -10px auto;
-  }
 }
 
 .hero-img {
@@ -253,7 +256,6 @@ span.play-btn {
     border-radius: 12px;
     box-shadow: var(--box-shadow);
     background: var(--background);
-
     padding: 12px 10px 0;
 }
 
@@ -277,187 +279,19 @@ span.play-btn {
 
 span.dollar {
     color: var(--guest-color);
-    
+
 }
 
 .overlapping .desc p {
     font-weight: bold;
 }
 
-@media(max-width: 1215px) {
-    .hero-description h1 {
-        width: 70%;
-        font-size: 2rem;
-    }
-
-    .hero-description p {
-        width: 75%;
-    }
-
-    .hero-img img {
-        width: 90%;
-        max-width: 500px;
-        padding-left: 50px;
-    }
-
-    .speech-bubble {
-        font: 1.8em Century Gothic, Verdana, sans-serif;
-    }
-
-    .overlapping img {
-        width: 120px;
-    }
-}
-
-@media(max-width: 1130px) {
-    .overlapping {
-        position: absolute;
-        bottom: -35px;
-        right: -30px;
-        font-size: 18px;
-    }
-
-    .desc p {
-        display: inline;
-    }
-
-    .overlapping img {
-        display: none;
-    }
-}
-
-@media(max-width: 1055px) {
-    .hero-description {
-        /* border: 1px solid black; */
-        width: 100%;
-        padding-left: 30px;
-    }
-
-    .speech-bubble {
-        font: 1.6em Century Gothic, Verdana, sans-serif;
-    }
-}
-
-@media(max-width: 915px) {
-    .hero {
-        width: 80%;
-        margin: 50px auto;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .hero-description .center {
-        /* border: 1px solid black; */
-        margin: 20px;
-        text-align: center;
-    }
-
-    .hero-description h1 {
-        /* border: 1px solid black; */
-        width: 100%;
-        padding: 30px;
-        margin-bottom: 15px;
-        font-size: 2.5rem;
-        font-weight: 600;
-    }
-
-    .hero-description p {
-        /* border: 1px solid black; */
-        margin: 20px 25px 40px;
-    }
-
-    .hero-img {
-        /* border: 1px solid black; */
-        margin-top: 35px;
-    }
-
-    .hero-img img {
-        width: 100%;
-        max-width: 600px;
-    }
-
-    .speech-bubble {
-        position: absolute;
-        top: 55px;
-        left: -30px;
-        font: 1.8em Century Gothic, Verdana, sans-serif;
-    }
-
-}
-
-@media(max-width: 740px) {
-    .hero-img img {
-        width: 100%;
-        max-width: 500px;
-    }
-
-    .speech-bubble {
-        font: 1.4em Century Gothic, Verdana, sans-serif;
-    }
-
-    .left-overlap {
-        width: 12rem;
-    }
-
-    .right-overlap {
-        width: 12rem;
-    }
-}
-
-@media(max-width: 700px) {
-    main {
-        max-width: 550px;
-    }
-
-    .hero-description {
-        padding: 30px 0;
-    }
-
-    .hero-description p {
-        font-size: 1.2rem;
-    }
-
-    .hero-img {
-        width: 100%;
-        max-width: 350px;
-        margin: 0 auto;
-    }
-
-    .hero-img img {
-        width: 100%;
-        max-width: 350px;
-        display: block;
-    }
-
-    .speech-bubble {
-        font: 1em Century Gothic, Verdana, sans-serif;
-    }
-
-    .overlapping {
-        position: absolute;
-        bottom: -85px;
-        left: 20px;
-    }
-
-    .left-overlap {
-        width: 8rem;
-    }
-
-    .right-overlap {
-        width: 8rem;
-        text-align: left;
-    }
-
-    .overlapping img {
-        display: none;
-    }
-}
 
 /* =================
        Special Dishes
       ================ */
 .special-dishes {
- /* border: 1px solid black; */
+    /* border: 1px solid black; */
     width: 90%;
     margin: 20px auto;
 }
@@ -559,58 +393,4 @@ span.greater-than-sign {
 .dish-cards h4,
 p {
     margin-bottom: 15px;
-}
-@media(max-width: 1000px){
-    .special-dishes{
-        margin-top: 600px;
-    }
-    .fav {
-    width: 55px;
-    height: 45px;
-   }
-.heart {
-  margin-top: 10px;
-    margin-left: 18px;
-}
-}
-@media(max-width: 767px){
-
-.dish-cards {
-     margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-   gap: 15px;
-}
-.fav {
-    width: 65px;
-    height: 55px;
-}
-
-.heart {
-    margin-top: 15px;
-    margin-left: 22px;
-}
- }
-@media(mox-width: 560px)
-{
-     .special-dishes{
-          /* width: 100%; */
- 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-   
-    body .special-dishes header {
-    width: 100%;
-    margin: 40px auto;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-}
-    .arrows {
-    border: 1px solid red;
-   display: flex;
-
-}
 }
